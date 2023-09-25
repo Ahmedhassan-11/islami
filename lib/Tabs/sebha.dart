@@ -19,11 +19,9 @@ class _SebhaTabState extends State<SebhaTab> {
           children: [
             Column(
               children: [
-                Center(
-                  child: Stack(children: [
-                    Positioned(child: Image.asset("assets/images/headsebha.png"))
-                  ],),
-                ),
+                Stack(children: [
+                  Positioned(child: Image.asset("assets/images/headsebha.png"))
+                ],),
                 InkWell(
                     onTap: () { for (int i = 0; i < Azkar.length; i++) {
                       if (counter == 30) {

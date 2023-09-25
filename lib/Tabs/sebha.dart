@@ -10,7 +10,7 @@ class _SebhaTabState extends State<SebhaTab> {
   int counter = 0;
   int index = 0;
   double Angle =0;
-  List<String> Azkar = ["سبحان الله", "الحمد لله", "لا اله الا الله "];
+  List<String> Azkar = [ "hg","سبحان الله", "الحمد لله", "لا اله الا الله "];
 
   @override
   Widget build(BuildContext context) {

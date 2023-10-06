@@ -5,6 +5,7 @@ import 'package:islami/Tabs/quran.dart';
 import 'package:islami/Tabs/radio.dart';
 import 'package:islami/Tabs/sebha.dart';
 import 'package:islami/Tabs/settings.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String routeName = "Homee";
@@ -26,7 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
             backgroundColor: Colors.transparent,
             appBar: AppBar(
               title:
-                  Text("Islami", style: Theme.of(context).textTheme.bodyLarge),
+                  Text(AppLocalizations.of(context)!.islami, style: Theme.of(context).textTheme.bodyLarge),
             ),
             body: tabs[index],
             bottomNavigationBar: BottomNavigationBar(

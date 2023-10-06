@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:islami/Tabs/SuraModel.dart';
+import 'package:islami/SuraModel.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class SuraDetails extends StatefulWidget {
   static const String routeName = "SuraDetails";
@@ -41,7 +42,6 @@ class _SuraDetailsState extends State<SuraDetails> {
   LoudFiles(int index) async {
     String sura = await rootBundle.loadString("assets/Files/${index+1}.txt");
     List<String> lines = sura.split("\n");
-    print(lines);
     lines = verses;
     setState(() {
 

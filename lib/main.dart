@@ -12,7 +12,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   PrefsHelper.prefs=await SharedPreferences.getInstance();
-  runApp(ChangeNotifierProvider(create: (context) => MyProvider(),child: const MyApp()));
+  runApp(ChangeNotifierProvider(create: (context) => MyProvider()..getdata(),child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {

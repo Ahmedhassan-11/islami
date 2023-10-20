@@ -29,7 +29,7 @@ class _SettingsTabState extends State<SettingsTab> {
                 showLanguageBottomSheet(context);
               },
               child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 18),
+                margin: EdgeInsets.symmetric(horizontal: 20),
                 padding: EdgeInsets.symmetric(horizontal: 12),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
